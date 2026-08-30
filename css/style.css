@@ -86,4 +86,33 @@ body {
 
 .button:hover {
     background-color: #4a4a8a;
+}/* ORGANIZING – BLUE */
+.section-blue {
+    background-color: #1a73e8;
+    color: white;
 }
+
+/* SCRAPBOOK LAYOUTS – PURPLE */
+.section-purple {
+    background-color: #6a6ab0;
+    color: white;
+}
+
+/* ONE CUT ENDLESS LAYOUTS – RED */
+.section-red {
+    background-color: #d64545;
+    color: white;
+}
+
+/* MY LAYOUTS – YELLOW */
+.section-yellow {
+    background-color: #f7c600;
+    color: black;
+}
+
+/* CARD SECTION – GREEN */
+.section-green {
+    background-color: #4caf50;
+    color: white;
+}
+

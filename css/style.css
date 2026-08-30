@@ -1,155 +1,82 @@
-/* GLOBAL STYLES */
+/* ---------------------------------------------------------
+   GLOBAL RESET & BASE
+--------------------------------------------------------- */
 body {
     margin: 0;
-    font-family: Quicksand, Arial, sans-serif;
-    background-color: #f7f7fb;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
     color: #333;
 }
 
-/* PAGE LAYOUT */
 .page-container {
     display: flex;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR
+--------------------------------------------------------- */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 4px solid #e5e5e5;
     min-height: 100vh;
 }
 
-/* SIDEBAR */
-.sidebar {
-    width: 260px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-right: 2px solid #e5e5e5;
-}
-
 .sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #4a4a8a;
-}
-
-.sidebar h3 {
-    margin-top: 25px;
-    font-size: 16px;
-    color: #6a6ab0;
+    margin-top: 0;
+    font-size: 1.6rem;
 }
 
 .sidebar a {
     display: block;
-    padding: 8px 0;
+    padding: 10px 0;
     text-decoration: none;
-    color: #444;
-    font-size: 15px;
-}
-
-.sidebar a:hover,
-.sidebar a.active {
-    color: #6a6ab0;
+    color: #333;
     font-weight: bold;
 }
 
-/* MAIN CONTENT */
+.sidebar a.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------
+   MAIN CONTENT
+--------------------------------------------------------- */
 .main-content {
     flex: 1;
-    padding: 30px;
+    padding: 40px;
 }
 
+/* ---------------------------------------------------------
+   PAGE TITLES WITH ICONS
+--------------------------------------------------------- */
 .page-title {
-    font-size: 32px;
-    color: #4a4a8a;
+    font-size: 2.2rem;
     margin-bottom: 20px;
-}
-
-/* CARDS */
-.card {
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 25px;
+    padding: 15px 20px;
     border-radius: 12px;
-    border: 1px solid #e5e5e5;
-}
-
-.section-title {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #6a6ab0;
-}
-
-/* BUTTONS */
-.button {
+    color: white;
     display: inline-block;
-    padding: 10px 18px;
-    background-color: #6a6ab0;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 5px 0;
 }
 
-.button:hover {
-    background-color: #4a4a8a;
-}/* ORGANIZING – BLUE */
-.section-blue {
-    background-color: #1a73e8;
-    color: white;
+.page-title::before {
+    content: attr(data-icon);
+    font-size: 2rem;
+    margin-right: 10px;
 }
 
-/* SCRAPBOOK LAYOUTS – PURPLE */
-.section-purple {
-    background-color: #6a6ab0;
-    color: white;
-}
-
-/* ONE CUT ENDLESS LAYOUTS – RED */
-.section-red {
-    background-color: #d64545;
-    color: white;
-}
-
-/* MY LAYOUTS – YELLOW */
-.section-yellow {
-    background-color: #f7c600;
-    color: black;
-}
-
-/* CARD SECTION – GREEN */
-.section-green {
-    background-color: #4caf50;
-    color: white;
-}
-
-/* HOMEPAGE BUTTON GRID PRETTY UPGRADE */
-.button-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.home-button {
-    display: block;
-    padding: 20px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 12px;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover effect */
-.home-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
-
-/* Section colors */
+/* Color themes */
 .section-blue { background-color: #3b82f6; }
 .section-purple { background-color: #a855f7; }
 .section-red { background-color: #ef4444; }
 .section-yellow { background-color: #facc15; color: black; }
 .section-green { background-color: #22c55e; }
-/* HOMEPAGE PRETTY UPGRADE */
+
+/* ---------------------------------------------------------
+   HOMEPAGE BUTTON GRID
+--------------------------------------------------------- */
 .button-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -171,35 +98,62 @@ body {
     border: 3px solid rgba(255,255,255,0.4);
 }
 
+/* Homepage icons */
+.home-button::before {
+    content: attr(data-icon);
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 /* Hover effect */
 .home-button:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
-/* Section colors */
-.section-blue { background-color: #3b82f6; }
-.section-purple { background-color: #a855f7; }
-.section-red { background-color: #ef4444; }
-.section-yellow { background-color: #facc15; color: black; }
-.section-green { background-color: #22c55e; }
-/* SECTION PAGE UPGRADE */
-.page-title {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    border-radius: 12px;
-    color: white;
-    display: inline-block;
+/* ---------------------------------------------------------
+   SCRAPBOOK PAGE WRAPPER
+--------------------------------------------------------- */
+.scrapbook-page {
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-size: 300px;
+    background-repeat: repeat;
+    border: 8px dashed rgba(0,0,0,0.15);
 }
 
-.section-blue.page-title { background-color: #3b82f6; }
-.section-purple.page-title { background-color: #a855f7; }
-.section-red.page-title { background-color: #ef4444; }
-.section-yellow.page-title { background-color: #facc15; color: black; }
-.section-green.page-title { background-color: #22c55e; }
+/* Themed scrapbook backgrounds */
+.scrapbook-blue {
+    background-image: url('https://i.imgur.com/8fKQZQp.png');
+    border-color: #3b82f6;
+}
 
-/* Cards inside pages */
+.scrapbook-purple {
+    background-image: url('https://i.imgur.com/3QeQ9rF.png');
+    border-color: #a855f7;
+}
+
+.scrapbook-red {
+    background-image: url('https://i.imgur.com/1wZ7p8F.png');
+    border-color: #ef4444;
+}
+
+.scrapbook-yellow {
+    background-image: url('https://i.imgur.com/0mVt7yT.png');
+    border-color: #facc15;
+}
+
+.scrapbook-green {
+    background-image: url('https://i.imgur.com/9tY7z0T.png');
+    border-color: #22c55e;
+}
+
+/* ---------------------------------------------------------
+   CARDS INSIDE PAGES
+--------------------------------------------------------- */
 .card {
     background: white;
     padding: 20px;
@@ -212,6 +166,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Buttons inside pages */
 .button {
     display: inline-block;
     padding: 12px 18px;
@@ -225,21 +180,4 @@ body {
 
 .button:hover {
     transform: translateY(-3px);
-}
-/* ICONS FOR HOMEPAGE BUTTONS */
-.home-button::before {
-    content: attr(data-icon);
-    font-size: 2rem;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-/* SCRAPBOOK PAGE WRAPPER */
-.scrapbook-page {
-    padding: 30px;
-    border-radius: 20px;
-    margin: 30px 0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    background-size: 300px;
-    background-repeat: repeat;
-    border: 8px dashed rgba(0,0,0,0.15);
 }

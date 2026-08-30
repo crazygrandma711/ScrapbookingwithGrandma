@@ -226,3 +226,10 @@ body {
 .button:hover {
     transform: translateY(-3px);
 }
+/* ICONS FOR HOMEPAGE BUTTONS */
+.home-button::before {
+    content: attr(data-icon);
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}

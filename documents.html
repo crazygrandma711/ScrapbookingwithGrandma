@@ -4,51 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Library</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background: #ffffff;
-            color: #000;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .doc-list a {
-            display: block;
-            margin: 10px 0;
-            font-size: 18px;
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .doc-list a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Organizing</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<div class="page-container">
 
-    <h1>Document Library</h1>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Scrapbooking With Grandma</h2>
 
-    <div class="doc-list">
-        <!-- REMOVE ZIP LINK (already deleted) -->
-        <!-- <a href="Sorting-kit.zip">⬇️ Sorting Kit (ZIP)</a> -->
+        <h3>Sections</h3>
+        <a href="index.html">Home</a>
+        <a href="documents.html" class="active">Organizing</a>
+        <a href="general-layouts.html">Scrapbook Layouts</a>
+        <a href="one-cut.html">One Cut Endless Layouts</a>
+        <a href="my-layouts.html">My Layouts</a>
+        <a href="card-supply-organizer.html">Card Section</a>
 
-        <a href="Scrapbook-Supply-Sorting-Chart.pdf">📘 Sorting Chart</a>
-        <a href="Scrapbook-Supply-Label-Sheet.pdf">🏷️ Label Sheet</a>
-        <a href="Scrapbook-Sorting-Cards.pdf">🗂️ Sorting Cards</a>
-
-        <a href="pdfs/planner-pdf.html">📔 Planner</a>
-        <a href="pdfs/punch-outs-pdf.html">✂️ Punch-Outs</a>
-        <a href="pdfs/sketches-pdf.html">📝 Sketches</a>
-        <a href="pdfs/stickers-pdf.html">💖 Stickers</a>
-        <a href="pdfs/use-first-pdf.html">⭐ Use First</a>
-        <a href="pdfs/washi-pdf.html">🎀 Washi</a>
-        <a href="pdfs/sorting-guide-pdf.html">📚 Sorting Guide</a>
+        <h3>Holiday</h3>
+        <a href="christmas-checklist.html">Christmas Checklist</a>
+        <a href="christmas-cards.html">Christmas Cards</a>
+        <a href="christmas-embellishments.html">Christmas Embellishments</a>
     </div>
 
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <h1 class="page-title section-blue">Organizing</h1>
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <h2 class="section-title">Sorting Guide</h2>
+            <a class="button section-blue" href="pdfs/sorting-guide-pdf.html">Open Sorting Guide</a>
+            <a class="button section-blue" href="SCRAPBOOK-SORTING-PER.pdf">Download PDF</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <h2 class="section-title">Supply Organizer</h2>
+            <a class="button section-blue" href="card-supply-organizer.html">Open Organizer</a>
+            <a class="button section-blue" href="Card-Supply-Organizer.pdf">Download PDF</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <h2 class="section-title">Sorting Cards</h2>
+            <a class="button section-blue" href="Scrapbook-Sorting-Cards.pdf">Download PDF</a>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <h2 class="section-title">Label Sheets</h2>
+            <a class="button section-blue" href="Scrapbook-Supply-Label-Sheet.pdf">Download PDF</a>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card">
+            <h2 class="section-title">Sorting Chart</h2>
+            <a class="button section-blue" href="Scrapbook-Sorting-Chart.pdf">Download PDF</a>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

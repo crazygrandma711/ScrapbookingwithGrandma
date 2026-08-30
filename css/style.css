@@ -149,3 +149,37 @@ body {
 .section-red { background-color: #ef4444; }
 .section-yellow { background-color: #facc15; color: black; }
 .section-green { background-color: #22c55e; }
+/* HOMEPAGE PRETTY UPGRADE */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.home-button {
+    display: block;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 3px solid rgba(255,255,255,0.4);
+}
+
+/* Hover effect */
+.home-button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Section colors */
+.section-blue { background-color: #3b82f6; }
+.section-purple { background-color: #a855f7; }
+.section-red { background-color: #ef4444; }
+.section-yellow { background-color: #facc15; color: black; }
+.section-green { background-color: #22c55e; }

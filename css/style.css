@@ -183,3 +183,46 @@ body {
 .section-red { background-color: #ef4444; }
 .section-yellow { background-color: #facc15; color: black; }
 .section-green { background-color: #22c55e; }
+/* SECTION PAGE UPGRADE */
+.page-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: white;
+    display: inline-block;
+}
+
+.section-blue.page-title { background-color: #3b82f6; }
+.section-purple.page-title { background-color: #a855f7; }
+.section-red.page-title { background-color: #ef4444; }
+.section-yellow.page-title { background-color: #facc15; color: black; }
+.section-green.page-title { background-color: #22c55e; }
+
+/* Cards inside pages */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}

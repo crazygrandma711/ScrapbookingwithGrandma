@@ -23,15 +23,22 @@ body {
     min-height: 100vh;
 }
 
-.sidebar h2 {
+/* ONLY the top header gets the pink brand color */
+.sidebar > h2 {
     background-color: #d63384; /* dark pink brand color */
     color: white;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 8px;
+    text-align: center;
     margin-top: 0;
     font-size: 1.6rem;
 }
 
+/* Normal sidebar section labels */
+.sidebar h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .sidebar a {
@@ -104,4 +111,92 @@ body {
     border: 3px solid rgba(255,255,255,0.4);
 }
 
-/
+.home-button::before {
+    content: attr(data-icon);
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.home-button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* ---------------------------------------------------------
+   SCRAPBOOK PAGE WRAPPER
+--------------------------------------------------------- */
+.scrapbook-page {
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-size: 300px;
+    background-repeat: repeat;
+    border: 8px dashed rgba(0,0,0,0.15);
+
+    /* White text on scrapbook backgrounds */
+    color: white;
+}
+
+/* ---------------------------------------------------------
+   SCRAPBOOK BACKGROUNDS (fixed textures)
+--------------------------------------------------------- */
+.scrapbook-blue {
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall.png');
+    border-color: #3b82f6;
+}
+
+.scrapbook-purple {
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    border-color: #a855f7;
+}
+
+.scrapbook-red {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    border-color: #ef4444;
+}
+
+.scrapbook-yellow {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    border-color: #facc15;
+}
+
+.scrapbook-green {
+    background-image: url('https://www.transparenttextures.com/patterns/soft-paper.png');
+    border-color: #22c55e;
+}
+
+/* ---------------------------------------------------------
+   CARDS INSIDE SCRAPBOOK PAGES
+--------------------------------------------------------- */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+
+    /* Dark text inside white cards */
+    color: #333;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Buttons inside pages */
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}

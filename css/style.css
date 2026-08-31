@@ -47,4 +47,37 @@ body {
 
 /* WELCOME BOX */
 .page-title {
-    font-size: 28
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* SCRAPBOOK PAGE WRAPPER */
+.scrapbook-page {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* BUTTON GRID */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* COLOR BUTTONS */
+.home-button {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* INDIVIDUAL COLORS */
+.section-blue { background-color: #2196f3; }
+.section-purple { background-color

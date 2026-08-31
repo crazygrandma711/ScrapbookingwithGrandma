@@ -1,47 +1,82 @@
 
-/* --------------------------------------------------
-   GLOBAL PAGE LAYOUT
--------------------------------------------------- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbooking With Grandma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f7f7f7;
-}
+<body>
+<div class="page-container">
 
-.page-container {
-    display: flex;
-    min-height: 100vh;
-}
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2 style="
+            background-color: #d63384;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 0;
+        ">
+            Scrapbooking With Grandma
+        </h2>
 
-/* --------------------------------------------------
-   SIDEBAR
--------------------------------------------------- */
+        <h3>Sections</h3>
+        <a href="index.html" class="active">Home</a>
+        <a href="start-here.html">Start Here</a>
 
-.sidebar {
-    width: 260px;
-    background-color: #ffffff;
-    border-right: 3px solid #d63384;
-    padding: 20px;
-    box-sizing: border-box;
-}
+        <h3>Worksheets</h3>
+        <a href="worksheets/worksheets.html">All Worksheets</a>
+        <a href="worksheets/planner.html">Planner</a>
+        <a href="worksheets/punch-outs.html">Punch-Outs</a>
+        <a href="worksheets/stickers.html">Stickers</a>
+        <a href="worksheets/use-first.html">Use First</a>
+        <a href="worksheets/washi.html">Washi</a>
 
-.sidebar h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #d63384;
-}
+        <h3>Extras</h3>
+        <a href="general-layouts.html">General Layouts</a>
+        <a href="one-cut.html">One Cut Endless Layouts</a>
+        <a href="my-layouts.html">Your Pick My Scrapbook Layout</a>
+        <a href="card-supply-organizer.html">Card Section</a>
+        <a href="https://youtube.com/@rubybrown711" target="_blank">YouTube Channel</a>
 
-.sidebar a {
-    display: block;
-    padding: 10px 12px;
-    margin-bottom: 6px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 6px;
-    transition: background 0.2s;
-}
+        <h3>Holiday</h3>
+        <a href="christmas-checklist.html">Christmas Checklist</a>
+        <a href="christmas-cards.html">Christmas Cards</a>
+        <a href="christmas-embellishments.html">Christmas Embellishments</a>
+    </div>
 
-.sidebar a:hover {
-    background-color: #ffe6f3;
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <h1 class="page-title" style="
+            background-color: #d63384;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+        ">
+            Welcome to Scrapbooking With Grandma
+        </h1>
+
+        <p class="intro-text">
+            Explore layouts, organizing guides, cards, worksheets, and holiday projects.
+            Choose a section below to begin.
+        </p>
+
+        <ul style="font-size: 20px; line-height: 1.8;">
+            <li><a href="documents.html">Organizing My Scrapbook Layouts</a></li>
+            <li><a href="one-cut.html">One Cut Endless Layouts</a></li>
+            <li><a href="my-layouts.html">Your Pick My Scrapbook Layout</a></li>
+            <li><a href="card-supply-organizer.html">Card Section</a></li>
+            <li><a href="worksheets/worksheets.html">Worksheets</a></li>
+            <li><a href="christmas-checklist.html">Holiday</a></li>
+            <li><a href="https://youtube.com/@rubybrown711" target="_blank">YouTube Channel</a></li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>

@@ -59,11 +59,12 @@ body {
     margin-top: 20px;
 }
 
-/* BUTTON GRID */
+/* BUTTON GRID — THIS FIXES YOUR ISSUE */
 .button-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
 }
 
 /* COLOR BUTTONS */
@@ -76,8 +77,18 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 /* INDIVIDUAL COLORS */
 .section-blue { background-color: #2196f3; }
-.section-purple { background-color
+.section-purple { background-color: #9c27b0; }
+.section-red { background-color: #e53935; }
+.section-yellow { background-color: #fbc02d; color: black; }
+.section-green { background-color: #43a047; }
+
+/* ICONS */
+.home-button::before {
+    content: attr(data-icon);
+    margin-right: 8px;
+}

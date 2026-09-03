@@ -106,3 +106,59 @@ body {
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+/* 🎄 Christmas Buttons */
+.pdf-button {
+    display: inline-block;
+    background-color: #c62828; /* Christmas red */
+    color: white;
+    padding: 12px 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pdf-button:hover {
+    background-color: #8e0000;
+    transform: scale(1.03);
+}
+
+/* 🎁 Fun Form Styling */
+.fun-form {
+    background: #fff8f0;
+    border: 2px dashed #c62828;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.fun-form label {
+    font-weight: bold;
+    color: #c62828;
+}
+
+.fun-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #c62828;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.fun-form button {
+    background-color: #2e7d32; /* Christmas green */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fun-form button:hover {
+    background-color: #1b5e20;
+}
+

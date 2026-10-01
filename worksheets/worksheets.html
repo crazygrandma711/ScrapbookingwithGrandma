@@ -1,77 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9V3H1G0DG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J9V3H1G0DG');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worksheets</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Organizing</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .video-grid iframe {
+            width: 360px;
+            height: 210px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        }
+
+        .choice-layout {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pdf-link {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
-
 <div class="page-container">
 
     <!-- SIDEBAR -->
     <div class="sidebar">
         <h2>Scrapbooking With Grandma</h2>
 
-        <h3>Worksheets</h3>
-        <a href="worksheets.html" class="active">All Worksheets</a>
-        <a href="planner.html">Planner</a>
-        <a href="stickers.html">Stickers</a>
-        <a href="use-first.html">Use First</a>
-        <a href="washi.html">Washi</a>
-
-        <h3>Extras</h3>
-        <a href="../documents.html">Organizing</a>
-        <a href="../general-layouts.html">General Layouts</a>
-        <a href="../one-cut.html">One Cut Endless Layouts</a>
-        <a href="../my-layouts.html">Your Pick My Scrapbook Layout</a>
-        <a href="../card-supply-organizer.html">Card Section</a>
-        <a href="https://www.youtube.com">YouTube Channel</a>
+        <h3>Sections</h3>
+        <a href="index.html">Home</a>
+        <a href="documents.html" class="active">Organizing</a>
+        <a href="scrapbooking-grandmas-memories.html">My Scrapbook Layouts</a>
+        <a href="one-cut.html">One Cut Endless Layouts</a>
+        <a href="my-layouts.html">Your Pick My Scrapbook Layout</a>
+        <a href="card-supply-organizer.html">Card Section</a>
 
         <h3>Holiday</h3>
-        <a href="../christmas-checklist.html">Christmas Checklist</a>
-        <a href="../christmas-cards.html">Christmas Cards</a>
-        <a href="../christmas-embellishments.html">Christmas Embellishments</a>
+        <a href="christmas-checklist.html">Christmas Checklist</a>
+        <a href="christmas-cards.html">Christmas Cards</a>
+        <a href="christmas-embellishments.html">Christmas Embellishments</a>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
-        <h1 class="page-title section-blue" data-icon="📘">
-            Worksheets
-        </h1>
-
-        <p>
-            These worksheets help you track, organize, and manage every part of your crafting stash.
-            Click any worksheet below to open it. Each one has a matching PDF version for printing.
+        <h1 class="page-title section-yellow">Organizing</h1>
+        <p class="intro-text">
+            All your organizing worksheets, forms, and videos in one place.
         </p>
 
-        <div class="scrapbook-page">
+        <!-- ⭐ ORGANIZING FORMS ⭐ -->
+        <section class="layout-section">
+            <h2 class="layout-title">📁 Organizing Forms & Worksheets</h2>
 
-            <!-- WORKSHEET BUTTONS -->
-            <h2>Choose a Worksheet</h2>
-            <div class="button-grid">
-                <a class="home-button section-blue" href="planner.html">Planner</a>
-                <a class="home-button section-blue" href="stickers.html">Stickers</a>
-                <a class="home-button section-blue" href="use-first.html">Use First</a>
-                <a class="home-button section-blue" href="washi.html">Washi</a>
+            <a class="pdf-link" href="pdfs/embellishment-organizer.pdf" target="_blank">Embellishment Organizer</a>
+            <a class="pdf-link" href="pdfs/scrap-storage.pdf" target="_blank">Scrap Storage System</a>
+            <a class="pdf-link" href="pdfs/paper-organization.pdf" target="_blank">Paper Organization</a>
+            <a class="pdf-link" href="pdfs/sticker-binder.pdf" target="_blank">Sticker Binder Setup</a>
+
+            <!-- FIXED main categories link -->
+            <a class="pdf-link" href="pdfs/Embellishment-Categories.pdf" target="_blank">Embellishment Categories</a>
+
+            <!-- Your two new PDFs -->
+            <a class="pdf-link" href="pdfs/ScrapbookEmbellishmentCategoriesGuide.pdf" target="_blank">Embellishment Categories Guide</a>
+            <a class="pdf-link" href="pdfs/EmbellishmentCategories.pdf" target="_blank">Embellishment Categories Checklist</a>
+
+            <a class="pdf-link" href="pdfs/supply-checklist.pdf" target="_blank">Supply Checklist</a>
+        </section>
+
+        <!-- ⭐ ORGANIZING VIDEOS ⭐ -->
+        <section class="layout-section">
+            <h2 class="layout-title">🎥 Organizing Videos</h2>
+
+            <!-- Organizing Embellishments -->
+            <div class="choice-layout">
+                <h3>Organizing Embellishments</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/nb-2ckgl-BI" allowfullscreen></iframe>
+                </div>
             </div>
 
-           <h2>Download PDFs</h2>
-<div class="button-grid">
-    <a class="home-button section-blue" href="../pdfs/planner.pdf">Planner PDF</a>
-    <a class="home-button section-blue" href="../pdfs/punch-outs.pdf">Punch-Outs PDF</a>
-    <a class="home-button section-blue" href="../pdfs/stickers.pdf">Stickers PDF</a>
-    <a class="home-button section-blue" href="../pdfs/use-first.pdf">Use First PDF</a>
-    <a class="home-button section-blue" href="../pdfs/washi.pdf">Washi PDF</a>
-</div>
- 
+            <!-- Where to Start -->
+            <div class="choice-layout">
+                <h3>Where to Start</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/Y-ULAtirsFE" allowfullscreen></iframe>
+                </div>
+            </div>
 
-        </div>
-    </div>
-</div>
+            <!-- Choose Your Style -->
+            <div class="choice-layout">
+                <h3>Choose Your Style</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/4hRvsWaFwF4" allowfullscreen></iframe>
+                </div>
+            </div>
 
+            <!-- Organizing Scraps -->
+            <div class="choice-layout">
+                <h3>Organizing Scraps</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/RqBd21ECuMA" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Organizing Small Embellishments -->
+            <div class="choice-layout">
+                <h3>Organizing Small Embellishments</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/4O3w9uqYdKQ" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+
+    </div> <!-- end main-content -->
+</div> <!-- end page-container -->
 </body>
 </html>
